@@ -1,5 +1,4 @@
 _len xs = do
-    print xs
     if null xs
         then 0
     else
@@ -7,10 +6,9 @@ _len xs = do
 
 main :: IO()
 main = do
-    putStrLn "Hello"
-    putStrLn "Enter string"
+    putStrLn "Enter list"
     s <- getLine
     let x = _len s
     putStrLn "Length = "
-
+    print x
     
